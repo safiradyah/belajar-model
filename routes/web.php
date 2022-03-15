@@ -19,3 +19,11 @@ Route::get('posts/{slug}', [PostController::class, 'show'])
     ->name('posts.show');
 
 Route::get('/fat', [PostController::class, 'index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
